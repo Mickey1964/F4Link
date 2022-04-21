@@ -1,0 +1,5 @@
+/MDK-ARM/*
+!/MDK-ARM/F4Link.uvoptx
+!/MDK-ARM/F4Link.uvprojx
+!/MDK-ARM/startup_stm32f401xe.lst
+!/MDK-ARM/startup_stm32f401xe.s
