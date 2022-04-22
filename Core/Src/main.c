@@ -163,7 +163,41 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
+#include "DAP_config.h"
+CoreDescriptor_t * pCoreDescriptor;
 
+/** Setup JTAG I/O pins: TCK, TMS, TDI, TDO, nTRST, and nRESET.
+  Configures the DAP Hardware I/O pins for JTAG mode:
+  - TCK, TMS, TDI, nTRST, nRESET to output mode and set to high level.
+  - TDO to input mode.
+*/ 
+void PORT_JTAG_SETUP()
+{
+}
+
+/** Disable JTAG/SWD I/O Pins.
+Disables the DAP Hardware I/O pins which configures:
+- TCK/SWCLK, TMS/SWDIO, TDI, TDO, nTRST, nRESET to High-Z mode.
+*/
+void PORT_OFF()
+{
+}
+
+/** Setup SWD I/O pins: SWCLK, SWDIO, and nRESET.
+  Configures the DAP Hardware I/O pins for Serial Wire Debug (SWD) mode:
+  - SWCLK, SWDIO, nRESET to output mode and set to default high level.
+  - TDI, TDO, nTRST to HighZ mode (pins are unused in SWD mode).
+*/ 
+void PORT_SWD_SETUP()
+{
+	
+}
+
+
+void vResetTarget(uint8_t bit)
+{
+	
+}
 /* USER CODE END 4 */
 
 /**

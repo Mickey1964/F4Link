@@ -337,7 +337,7 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>USE_HAL_DRIVER,STM32F401xE</Define>
+              <Define>USE_HAL_DRIVER,STM32F401xE,F4LINK</Define>
               <Undefine></Undefine>
               <IncludePath>../Core/Inc;../USB_DEVICE/App;../USB_DEVICE/Target;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F;../Middlewares/ST/STM32_USB_Device_Library/Core/Inc;../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;..\DAPLink\cmsis-dap</IncludePath>
             </VariousControls>
@@ -668,6 +668,16 @@
         <Group>
           <GroupName>DAPLink/cmsis-dap</GroupName>
           <Files>
+            <File>
+              <FileName>DAP_config.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\DAPLink\cmsis-dap\DAP_config.h</FilePath>
+            </File>
+            <File>
+              <FileName>DAP.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\DAPLink\cmsis-dap\DAP.h</FilePath>
+            </File>
             <File>
               <FileName>DAP.c</FileName>
               <FileType>1</FileType>
