@@ -236,6 +236,12 @@ void Error_Handler(void)
   /* USER CODE END Error_Handler_Debug */
 }
 
+int fputc(int ch, FILE *p)
+{
+    SEGGER_RTT_PutChar(0, ch);
+    return ch;
+}
+
 #ifdef  USE_FULL_ASSERT
 /**
   * @brief  Reports the name of the source file and the source line number
